@@ -1,0 +1,26 @@
+Design pattern for frontend engineer:
+
+Component-based architecture:
+Definition: In this pattern UI is broken into smaller, self-contained, reusable units called components. Each component handles its own logic, presentation and behavior.
+
+Key Features:
+Reusability: Components can be used across different parts of the application. 
+
+Encapsulation: Components have their own logic can be isolated from other components
+
+Hierarchy: Component can be nested to create complex ui.
+Ex: A navbar component containing Logo, menu and search component.
+
+	How it works: 
+Stractured: Divide the app into a tree of components .
+Porps: Parent components pass the data to children via props.
+State: Components manage their own local state.
+Events: Children communicate with parents using callbacks.
+
+	Why it is important: 
+Encourage Modularity, making the code easier to read, test, maintainable.
+Simplify collaboration by allowing developers to work on independent components.
+Improve scalability as the app grow
+	
+	Real world Example
+A card component used in product grid, a profile page, blog page, and dashboard with little variation using props
