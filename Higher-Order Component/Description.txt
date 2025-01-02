@@ -1,0 +1,29 @@
+Design pattern for frontend engineers: 2
+
+Higher-Order Component: 
+Definition: It’s an advanced pattern for reusing component logic. It’s essentially a function that takes a component as an input and returns a new component with enhanced functionality.
+
+Key Features:
+Enhancement: HOCs add reusable functionality or behavior to components.
+Function Signature: A HOC is just a javascript function:
+Ex: const withEnhancement = (WrappedComponent) => {
+		Return (props) => <WrappedComponent {...props} />
+	};
+Pure Component: HOCs work by wrapping existing components without modifying then directly
+
+Why Learn It:
+Code Reusability: Allows you to apply shared logic across multiple components.
+Separation of Concerns: Keep components focused on their primary responsibilities while delegating shared logic to the HOC
+
+Pros of HOCs: 
+Reusability: Encapsulates shared logic, making it reusable across multiple components.
+Code Organization: Helps keep components clean and focused on presentation.
+Enhance Features: Easily add functionalities like logging, theming or authentication.
+
+Cons of HOCs:
+Wrapper hell: Using many HOCs can result in deeply nested component trees, making debugging harder.
+Prop Collision: Props passed by the HOC might conflict with those of the wrapped component.
+Legacy pattern: custom hooks are now preferred in many cases, offering similar benefits with cleaner syntax. 
+
+Opinion: 
+I always prefer Custom Hooks instead HOCs
